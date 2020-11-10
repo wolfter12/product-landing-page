@@ -1,5 +1,141 @@
-/* The navbar should always be at the top of the viewport. */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* My product landing page should have at least one media query. */
+html, body {
+  width: 100%;
+}
 
-/* My product landing page should utilize CSS flexbox at least once. */
+/* HEADER */
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 100px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid orange;
+}
+
+#header-img {
+  width: 96px;
+  height: 96px;
+}
+
+#nav-bar>ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+/* ----------------------------------- */
+
+/* MAIN */
+
+/* WHAT WE OFFER */
+
+#main {
+  display: flex;
+  flex-direction: column;
+  margin: 120px auto 0;
+  padding: 20px;
+  max-width: 768px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main section {
+  padding-bottom: 40px;
+}
+
+#advantages img {
+  width: 60px;
+  margin-right: 20px;
+}
+
+#advantages li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 30px;
+}
+
+#advantages p {
+  font-size: 1.5rem;
+}
+
+/* ABOUT US */
+
+#about-us {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#about-us h2 {
+  text-align: center;
+  padding: 40px 0 20px;
+  font-size: 2rem;
+}
+
+/* CONTACT US */
+
+#contact-us {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#form input {
+  min-width: 300px;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+#submit {
+  align-self: center;
+  padding: 10px 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: orange;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px darkorange;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* ------------------------------- */
