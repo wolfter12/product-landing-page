@@ -9,26 +9,50 @@
 </head>
 
 <body>
-
   <header id="header">
-    <img src="" alt="" id="header-img">
+    <img src="./images/logo.png" alt="Logo" id="header-img">
     <nav id="nav-bar">
       <ul>
-        <li><a href="" class="nav-link"></a></li>
-        <li><a href="" class="nav-link"></a></li>
-        <li><a href="" class="nav-link"></a></li>
+        <li><a href="#what-we-offer" class="nav-link">Advantages</a></li>
+        <li><a href="#about-us" class="nav-link">About us</a></li>
+        <li><a href="#contact-us" class="nav-link">Contact us</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <iframe id="video" width="727" height="409" src="https://www.youtube.com/embed/Pmql-zeRJqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-      <label for="email">Email
-        <input type="email" name="email" id="email" placeholder="Email" required>
-        <button type="submit" id="submit"></button>
-      </label>
-    </form>
+  <main id="main">
+
+    <section id="what-we-offer">
+      <ul id="advantages">
+        <li>
+          <img src="./images/award.png" alt="High quality icon">
+          <p>Oranges with the highest quality and freshness</p>
+        </li>
+        <li>
+          <img src="./images/delivery.png" alt="Fast delivery icon">
+          <p>From supplier to customer in 48 hours</p>
+        </li>
+        <li>
+          <img src="./images/price.png" alt="Nice price icon">
+          <p>The best price on the market</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about-us">
+      <h2>Who we are?</h2>
+      <iframe id="video" width="727" height="409" src="https://www.youtube.com/embed/Pmql-zeRJqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </section>
+
+    <section id="contact-us">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <label for="email">Your Email<input type="email" name="email" id="email" placeholder="Email" required>
+        </label>
+        <button type="submit" id="submit">Contact us</button>
+      </form>
+    </section>
+
   </main>
 
 </body>
