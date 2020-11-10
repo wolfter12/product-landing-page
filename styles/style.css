@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* HEADER */
@@ -14,14 +14,16 @@ html, body {
   position: fixed;
   top: 0;
   width: 100%;
+  min-width: 400px;
   min-height: 100px;
   padding: 0px 20px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-bottom: 1px solid orange;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 2px solid orange;
+  z-index: 1;
 }
 
 #header-img {
@@ -34,6 +36,22 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  #header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  #nav-bar>ul {
+    width: 100vw;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  #nav-bar li {
+    padding: 5px;
+  }
 }
 
 li {
@@ -61,8 +79,14 @@ li {
   flex-direction: column;
   margin: 120px auto 0;
   padding: 20px;
+  min-width: 400px;
   max-width: 768px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 800px) {
+  #main {
+    margin: 220px auto 0;
+  }
 }
 
 #main section {
@@ -88,21 +112,28 @@ li {
 
 /* ABOUT US */
 
-#about-us {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 #about-us h2 {
   text-align: center;
-  padding: 40px 0 20px;
+  padding: 20px 0;
   font-size: 2rem;
 }
 
-/* CONTACT US */
-
-#contact-us {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
 }
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* CONTACT US */
 
 #form {
   display: flex;
@@ -118,21 +149,20 @@ li {
   text-align: center;
 }
 
-#form input {
+form input {
   min-width: 300px;
-  margin-top: 5px;
   padding: 5px 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
 
-#submit {
+form #submit {
   align-self: center;
-  padding: 10px 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   background-color: orange;
   border-style: none;
-  border-radius: 5px;
   box-shadow: 0 0 10px darkorange;
   color: #fff;
   text-transform: uppercase;
